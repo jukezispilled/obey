@@ -41,7 +41,7 @@ function App() {
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          CA: updating...
+          CA: 59Rs5gVYDAYB4otPEnZynzXW8aXvJPeSPMTHpikF6eKX
         </motion.div>
       </div>
     </div>
