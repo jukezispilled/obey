@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Xlogo from "./XLogo.jpg";
 import TG from "./TG.png";
+import { motion } from 'framer-motion'; // Import motion from framer-motion
 
 function App() {
   return (
@@ -29,12 +30,19 @@ function App() {
       />
       <img src="dog.png" className="absolute bottom-0 w-[95%] md:w-[65%] z-20" alt="dog" />
       <div className='text-8xl md:text-[150px] text-center text-white font-custom z-30 mt-[35%] md:mt-[7.5%]'>
-        <div className=''>
+        <motion.div
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
           Obey
-        </div>
-        <div className='text-sm md:text-xl font-custom1'>
+        </motion.div>
+        <motion.div
+          className='text-sm md:text-xl font-custom1'
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        >
           CA: updating...
-        </div>
+        </motion.div>
       </div>
     </div>
   );
